@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #4dccf6;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.wrapper {
+    background-color: #2e3033;
+    color: #fff;
+    width: 90%;
+    height: 500px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.page-header {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+.page-header-left {
+    flex-basis: 200px;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header-button {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 8px;
+    background-color: #fba29d;
+}
+
+.header-button-yellow {
+    background-color: #edcc71;
+}
+
+.header-button-green {
+    background-color: #a2d17c;
+}
+
+.page-header-right {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* для сеарч сам делаю ПРОДОЛЖИТЬ!!! */
+.search input {
+    width: 200px;
+    height: 28px;
+    padding-left: 40px;
+    background-image: url("img/search.png");
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 1px solid #000;
+    background-color: #393c40;
+    color: #fff;
+    background-position: 10px;
+    cursor: pointer;
+}
+
+/* продолжение правой части сам делаю) */
+.user {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+}
+/* ya */
+.user img {
+    width: 35px;
+    height: 35px;
+}
+/* ya */
+.user span {
+    padding: 0 25px 0 10px;
+    font-weight: bold;
+}
+/* ya */
+.user-profile {
+    background-image: url("img/user-profile.png");
+    width: 27px;
+    height: 27px;
+    margin-right: 3px;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.user-setting {
+    background-image: url("img/user-setting.png");
+    width: 27px;
+    height: 27px;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+.content {
+    /* outline: 1px solid #f00; */
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    flex-basis: 200px;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.sidebar-menu {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #e67c73;
+    margin-right: 9px;
+}
+
+.status-on {
+    background-color: green;
+}
+
+.status-pause {
+    background-color: #e6bf73;
+}
+
+.status-white {
+    background-color: #fff;    
+}
+
+.actions {
+    font-size: 0;
+    padding: 20px;
+    background-color: #000;
+}
+
+/*это для стилизации кнопок*/
+.actions button {
+    background-color: #00b6f2;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #80dbf9;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* задать фон кнопкам
+вот пример
+.actions button.name {}*/
+.actions-call {
+    background-image: url('img/call.png');
+}
+
+.actions-chat {
+    background-image: url("img/chat.png");
+}
+
+.actions-download {
+    background-image: url("img/download.png");
+}
+
+.actions button:last-child {
+    margin-right: 0;
+}
+
+.chat {
+    flex-grow: 1;
+}
+
+.chat-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    height: 360px;
+    overflow-y: auto;
+}
+
+.chat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px 20px 20px;
+    background-color: #393c40;
+}
+
+.chat-item-my {
+    background-color: #2e3033;
+}
+
+.chat-item-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.chat-item-left img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.chat-item-message * {
+    margin: 0;
+}
+
+.chat-item-message h4 {
+    margin-bottom: 10px;
+}
+
+.chat-item-right {
+    flex-basis: 105px;
+    text-align: right;
+}
+
+.add-message {
+    padding: 20px;
+}
+
+.add-message textarea {
+    height: 50px;
+    width: 100%;
+    display: block;
+    background-color: #393c40;
+    resize: none;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+.add-message textarea::placeholder {
+    color: #fff;
+ }
