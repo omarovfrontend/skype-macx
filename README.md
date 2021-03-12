@@ -1,3 +1,3 @@
 # skype macx
 
-Demo - https://omarov-frontend.github.io/skype-macx/
+Demo - https://omarovfrontend.github.io/skype-macx/
